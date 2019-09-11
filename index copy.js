@@ -16,13 +16,12 @@ const readFile = file => {
     if (err) throw err;
     const arrayOfContent = data
       .split("\n")
-      .map((ele, index) => {
+      .map(ele => {
         if (ele.includes("Refrain")) currentType = "Refrain";
         if (ele.includes("Bridge")) currentType = "Bridge";
         if (ele.includes("Author")) currentType = "Author";
         if (ele === "") currentType = "";
         return {
-          nr: index,
           text: ele,
           length: ele.length,
           type: isUpperCase(ele)
@@ -53,15 +52,17 @@ const readFile = file => {
   /* Append the data to the json file */
   const storeData = (data, path) => {
     try {
-      // fs.writeFileSync
-      fs.appendFile(path, JSON.stringify(data), () => console.log("Done"));
+      const neuerText = data.map(ele => ele.text).join("\n");
+      console.log(neuerText);
+
+      // fs.appendFile(path, JSON.stringify(data), () => console.log("Done"));
     } catch (err) {
       console.error(err);
     }
   };
 
   isUpperCase = ele => {
-    return /[A-Z]{3,}/g.test(ele);
+    return /\b[A-Z]\b/g.test(ele);
   };
 
   isDate = ele => {
