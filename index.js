@@ -34,7 +34,7 @@ const readFile = file => {
             : currentType
         };
       })
-      .filter(line => line.text.length > 0)
+      // Ignore empty lines and thus destroy layout: .filter(line => line.text.length > 0)
       .filter(line =>
         line.text === "Bridge:" ||
         line.text === "Bridge" ||

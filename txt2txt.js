@@ -16,12 +16,13 @@ const readFile = file => {
     if (err) throw err;
     const arrayOfContent = data
       .split("\n")
-      .map(ele => {
+      .map((ele, index) => {
         if (ele.includes("Refrain")) currentType = "Refrain";
         if (ele.includes("Bridge")) currentType = "Bridge";
         if (ele.includes("Author")) currentType = "Author";
         if (ele === "") currentType = "";
         return {
+          nr: index,
           text: ele,
           length: ele.length,
           type: isUpperCase(ele)
@@ -33,7 +34,7 @@ const readFile = file => {
             : currentType
         };
       })
-      .filter(line => line.text.length > 0)
+      // Ignore empty lines and thus destroy layout: .filter(line => line.text.length > 0)
       .filter(line =>
         line.text === "Bridge:" ||
         line.text === "Bridge" ||
@@ -54,8 +55,14 @@ const readFile = file => {
     try {
       const neuerText = data.map(ele => ele.text).join("\n");
       console.log(neuerText);
+      fs.writeFile("out.txt", neuerText, function(err) {
+        if (err) {
+          return console.log(err);
+        }
 
-      // fs.appendFile(path, JSON.stringify(data), () => console.log("Done"));
+        console.log("The file was saved!");
+      });
+      fs.appendFile(path, JSON.stringify(data), () => console.log("Done"));
     } catch (err) {
       console.error(err);
     }
