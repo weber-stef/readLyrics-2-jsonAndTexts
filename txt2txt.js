@@ -14,52 +14,52 @@ fs.readdir(directory, (err, files) => {
 const readFile = file => {
   fs.readFile(directory + file, "utf8", function(err, data) {
     if (err) throw err;
-    const arrayOfContent = data
-      .split("\n")
-      .map((ele, index) => {
-        if (ele.includes("Refrain")) currentType = "Refrain";
-        if (ele.includes("Bridge")) currentType = "Bridge";
-        if (ele.includes("Author")) currentType = "Author";
-        if (ele === "") currentType = "";
-        return {
-          nr: index,
-          text: ele,
-          length: ele.length,
-          type: isUpperCase(ele)
-            ? "Title"
-            : isDate(ele)
-            ? "Date"
-            : isYear(ele)
-            ? "Year"
-            : currentType
-        };
-      })
-      // Ignore empty lines and thus destroy layout: .filter(line => line.text.length > 0)
-      .filter(line =>
-        line.text === "Bridge:" ||
-        line.text === "Bridge" ||
-        line.text === "Refrain:" ||
-        line.text === "Refrain" ||
-        line.text === "Author:" ||
-        line.text === "Date:"
-          ? false
-          : true
-      );
+    const arrayOfContent = data.split("\n").map((ele, index) => {
+      if (ele.includes("Refrain")) currentType = "Refrain";
+      if (ele.includes("Bridge")) currentType = "Bridge";
+      if (ele.includes("Author")) currentType = "Author";
+      if (ele === "") currentType = "";
+      return {
+        nr: index,
+        text: ele,
+        length: ele.length,
+        type: isUpperCase(ele)
+          ? "Title"
+          : isDate(ele)
+          ? "Date"
+          : isYear(ele)
+          ? "Year"
+          : currentType
+      };
+    });
+    // Ignore empty lines and thus destroy layout: .filter(line => line.text.length > 0)
+    const arrayFiltered = arrayOfContent.filter(line =>
+      line.text === "Bridge:" ||
+      line.text === "Bridge" ||
+      line.text === "Refrain:" ||
+      line.text === "Refrain" ||
+      line.text === "Author:" ||
+      line.text === "Date:"
+        ? false
+        : true
+    );
 
     //console.log(arrayOfContent)
-    storeData(arrayOfContent, "./lyrics.json");
+    storeData(arrayFiltered, "./lyrics.json", arrayOfContent);
   });
 
   /* Append the data to the json file */
-  const storeData = (data, path) => {
+  const storeData = (data, path, unfilteredData) => {
     try {
-      const neuerText = data
+      const neuerText = unfilteredData
         .map(ele => {
+          //if mapping through a title, add linebreak afterwardss
           if (ele.type === "Title") {
             ele.text = ele.text + "\n";
-            console.log(ele.text);
-          } else {
-            ele.text = ele.text;
+          }
+          //if mapping through a Refrain, add linebreak afterwardss
+          if (ele.text === "Refrain") {
+            ele.text = "\n" + ele.text;
           }
           return ele.text;
         })
