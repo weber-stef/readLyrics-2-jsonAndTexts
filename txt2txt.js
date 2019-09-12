@@ -1,6 +1,10 @@
 const fs = require("fs");
 const directory = "./lyrics/";
 let currentType = "";
+// function to becalled in map
+function whatever(clme) {
+  console.log(clme);
+}
 /* Search for all the file in a given directory */
 fs.readdir(directory, (err, files) => {
   if (err) throw err;
@@ -14,26 +18,26 @@ fs.readdir(directory, (err, files) => {
 const readFile = file => {
   fs.readFile(directory + file, "utf8", function(err, data) {
     if (err) throw err;
-    const arrayOfContent = data.split("\n").map((ele, index) => {
-      if (ele.includes("Refrain")) currentType = "Refrain";
-      if (ele.includes("Bridge")) currentType = "Bridge";
-      if (ele.includes("Author")) currentType = "Author";
-      if (ele === "") currentType = "";
+    const unfilteredTextArry = data.split("\n").map((singleTextLine, index) => {
+      if (singleTextLine.includes("Refrain")) currentType = "Refrain";
+      if (singleTextLine.includes("Bridge")) currentType = "Bridge";
+      if (singleTextLine.includes("Author")) currentType = "Author";
+      if (singleTextLine === "") currentType = "";
       return {
         nr: index,
-        text: ele,
-        length: ele.length,
-        type: isUpperCase(ele)
+        text: singleTextLine,
+        length: singleTextLine.length,
+        type: isUpperCase(singleTextLine)
           ? "Title"
-          : isDate(ele)
+          : isDate(singleTextLine)
           ? "Date"
-          : isYear(ele)
+          : isYear(singleTextLine)
           ? "Year"
           : currentType
       };
     });
-    // Ignore empty lines and thus destroy layout: .filter(line => line.text.length > 0)
-    const arrayFiltered = arrayOfContent.filter(line =>
+    // Do not write the following words as text-entries to the json file
+    const filteredTextArray = unfilteredTextArry.filter(line =>
       line.text === "Bridge:" ||
       line.text === "Bridge" ||
       line.text === "Refrain:" ||
@@ -44,24 +48,37 @@ const readFile = file => {
         : true
     );
 
-    //console.log(arrayOfContent)
-    storeData(arrayFiltered, "./lyrics.json", arrayOfContent);
+    //define storage-function  (dataToHandOverToJson, PathToJsonFile, dataToHandOverToReformattedTextFile)
+    storeData(filteredTextArray, "./lyrics.json", unfilteredTextArry);
   });
 
   /* Append the data to the json file */
   const storeData = (data, path, unfilteredData) => {
     try {
       const neuerText = unfilteredData
-        .map(ele => {
-          //if mapping through a title, add linebreak afterwardss
-          if (ele.type === "Title") {
-            ele.text = ele.text + "\n";
+        .map((singleTextLine, index) => {
+          if (singleTextLine.text.indexOf("\n") <= 0) {
+            // console.log("no Linebreaks");
+            //if mapping through one of the metioned cases, add linebreak before it
+            if (
+              singleTextLine.text.indexOf("Ref") >= 0 ||
+              singleTextLine.text.indexOf("Bridge") >= 0
+            ) {
+              singleTextLine.text = "\n" + singleTextLine.text;
+              singleTextLine.type = "";
+            }
+            if (isUpperCase()) {
+              console.log("uppercase found");
+              singleTextLine = singleTextLine + "\n";
+            }
+            return (
+              isUpperCase() +
+              " - " +
+              singleTextLine.nr +
+              " - " +
+              singleTextLine.text
+            );
           }
-          //if mapping through a Refrain, add linebreak afterwardss
-          if (ele.text === "Refrain") {
-            ele.text = "\n" + ele.text;
-          }
-          return ele.text;
         })
         .join("\n");
       console.log(neuerText);
@@ -78,23 +95,25 @@ const readFile = file => {
     }
   };
 
-  isUpperCase = ele => {
-    return /[A-Z]{2,}/g.test(ele);
+  isUpperCase = singleTextLine => {
+    // check for more than 2 Capital Letters in a row > The title
+    // console.log(/\b[A-Z]{2,}/g.test(singleTextLine));
+    return /\b[A-Z]{2,}/g.test(singleTextLine);
   };
 
-  isDate = ele => {
+  isDate = singleTextLine => {
     // check for sth like (08.09)
-    return /\([0-9]{1,}\.[0-9]{1,}.{0,}\)/g.test(ele);
+    return /\([0-9]{1,}\.[0-9]{1,}.{0,}\)/g.test(singleTextLine);
   };
 
-  isYear = ele => {
+  isYear = singleTextLine => {
     // check for sth like (08.09)
-    return /[0-9]{4}./g.test(ele);
+    return /[0-9]{4}./g.test(singleTextLine);
   };
 
-  isAuthor = ele => {};
+  isAuthor = singleTextLine => {};
 
-  isNumber = ele => {
-    return /^\d+$/.test(ele);
+  isNumber = singleTextLine => {
+    return /^\d+$/.test(singleTextLine);
   };
 };

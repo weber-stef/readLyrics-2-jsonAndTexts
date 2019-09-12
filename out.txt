@@ -1,148 +1,65 @@
-WILDE AUGEN
-
-Ich nahm dich in meinen Arm und sah dir tief in deine Augen.
-Meine Arme wurden lahm, denn du begannst, mich auszusAugen.
-Deine Augen sprühten Feuer, das mich wohl zerstören sollte.
-Sie wurden zum Ungeheuer, das mich langsam überrollte.
+false - 0 - DER REBELL
+false - 1 - 
+false - 2 - 
+false - 3 - Man hatte ihn geschlagen, bis die Wut in ihm erwachte,
+false - 4 - Er wollte handeln, nicht mehr klagen,
+false - 5 - Weil er nur noch ah Vergeltung dachte.
+false - 6 - Seine Gedanken waren klar, bis der Hass ihn erfasste,
+false - 7 - Und er nicht mehr denken konnte, weil er nur noch Hasste.
+false - 8 - Und alle Menschen, die ihn je verletzten,
+false - 9 - Die wollte er nur noch zu tode hetzen
+false - 10 - 
 Refrain:
-Mädchen, du hast wilde Augen, voller Feuer, voller Macht.
-Ich weiß, sie werden mich aussaugen in meiner TodesNacht.
-Ich sah in die wilden Augen voller starker, schwarzer Macht.
-Ich weiß, sie werden mich aussaugen in meiner TodesNacht.
-Mitten aus den dunklen Räumen traf mich dieser heiße Strahl.
-Ich folg dir jetzt in meinen Träumen, denn du ließt mir keine Wahl.
-Ich hab dich schon einmal gekannt in einem anderen Leben.
-Die Augen hast du mir verbrannt, erzeugtes dieses Beben.
-
+false - 11 - Denn wen man quält, vergisst nicht schnell.
+false - 12 - Und wen man ewig unterdrückt,
+false - 13 - 
+false - 14 - Der wird eines Tages zum Rebell, Rebell, Rebell!
+false - 15 - Und er rächte die seinen, mit seinem Hasserfüllten Herz.
+false - 16 - Und wer ihn je quälte, spürte jetzt den Schmerz.
+false - 17 - Er mordete die mörder, die ohne Recht getötet hatten,
+false - 18 - und auf grausame Menschen fiel ein grausamer Schatten.
+false - 19 - In ihm brannte die Blutige Glut
+false - 20 - Und es gab kein entrinnen aus seiner todeswut
+false - 21 - 
 Refrain
-Du jagtest mich durch tausend Zeiten, ich bin dir nie entkommen.
-Jetzt schiebst du mich in neue Weiten, wieder ist die Zeit gekommen.
-Ich weiß nicht, welches Band uns bindet, welche Ziele du dir hast gesetzt,
-Doch ich sehe es in deinen Augen, du hast mich schon so oft gehetzt.
-
+false - 22 - Und du spuckst aus Verachtung deine Feinde an,
+false - 23 - Und du glaubst nicht, dass auch ihr Hass tödlich sein kann.
+false - 24 - Und du trittst auf den jungen Wolf noch ein,
+false - 25 - Doch in zwei guten Sommern kann der wachsende Wolf
+false - 26 - Dir zum Todfeind geworden sein.
+false - 27 - Und du tötest den Vater, doch der Sohn wird kommen,
+false - 28 - Und aus seiner Kraft gibt es kein entkommen.
+false - 29 - 
 Refrain
-Deine Arme brechen Ketten, deine Augen strahlen rot.
-Nein, ich kann mich nicht mehr retten, erkenne dich,
-Du bist der Tod.
-1981
-DER WEG
-
-Alles zerbricht vor meinen Augen,
-Ich kann es nicht aufhalten.
-Und ich spüre den Hass wie die Glut auf mir,
-Auf meiner haut erkalten.
-Und ich sehe den Hass in den Augen der Feinde,
-Die mich unverdeckt verbrennen.
-Und ich spüre die Angst in den Augen von fremden,
-Die meine qualen nicht erkennen.
-Und meine Hände können nicht mehr fassen,
-Weil ich meinen körper nicht mehr lenken kann.
-Meine kräfte haben mich verlassen
-Und der Hass ist schuld daran.
+false - 30 - 1981
+false - 31 - GRAUSAME WAHRHEIT
+false - 32 - Und als die Gequälten aufstanden und sahen ihre Not,
+false - 33 - als Unterdrückte verstanden,
+false - 34 - da schlugen der Lügners Schwerter sie tot.
+false - 35 - 
 Refrain:
-Ich bin auf dem weg, den man hinunterrennt,
-Wenn man verzweifelt, weil man erkennt.
-Ich geh auf dem Wege der einmals versuchten,
-Ich geh auf dem weg der zum leben verfluchten.
-Und ich weiß, wenn es niemals frieden gibt,
-Schmerzen werden immer sein.
-Und ich weiß, solange es kämpfe gibt,
-Solang sind wir alle allein.
-Und ich seh, dass der Adler seine Opfer zerfetzt,
-Weil er überleben will.
-Und es ist als werde man immer gehetzt,
-Wenn man mehr als nur leben will.
-Und so endet die Zeit dann mit dem tod
-Und nimmt, ohne zu geben.
-Doch aus der allergrößten Not
-Erwächst der Hang zu überleben.
-1981
-DER REBELL
-
-Man hatte ihn geschlagen, bis die Wut in ihm erwachte,
-Er wollte handeln, nicht mehr klagen,
-Weil er nur noch ah Vergeltung dachte.
-Seine Gedanken waren klar, bis der Hass ihn erfasste,
-Und er nicht mehr denken konnte, weil er nur noch Hasste.
-Und alle Menschen, die ihn je verletzten,
-Die wollte er nur noch zu tode hetzen
-Refrain:
-Denn wen man quält, vergisst nicht schnell.
-Und wen man ewig unterdrückt,
-Der wird eines Tages zum Rebell, Rebell, Rebell!
-Und er rächte die seinen, mit seinem Hasserfüllten Herz.
-Und wer ihn je quälte, spürte jetzt den Schmerz.
-Er mordete die mörder, die ohne Recht getötet hatten,
-und auf grausame Menschen fiel ein grausamer Schatten.
-In ihm brannte die Blutige Glut
-Und es gab kein entrinnen aus seiner todeswut
-
-Refrain
-Und du spuckst aus Verachtung deine Feinde an,
-Und du glaubst nicht, dass auch ihr Hass tödlich sein kann.
-Und du trittst auf den jungen Wolf noch ein,
-Doch in zwei guten Sommern kann der wachsende Wolf
-Dir zum Todfeind geworden sein.
-Und du tötest den Vater, doch der Sohn wird kommen,
-Und aus seiner Kraft gibt es kein entkommen.
-
-Refrain
-1981
-GRAUSAME WAHRHEIT
-
-Und als die Gequälten aufstanden und sahen ihre Not,
-als Unterdrückte verstanden,
-da schlugen der Lügners Schwerter sie tot.
-Und wer die Wahrheit verkündet hat,
-den haben die Lügner zum Schweigen gebracht.
-Und als das Volk des Hungers schrie,
-haben die Herrscher nur gelacht.
-Und als er nach Freunden suchte, da hat er nur Feinde gefunden.
-Und als ihn die Ersten erhörten, da ist er in tiefen Kerkern
-aus Lüge und Steinen und Blut für immer und ewig verschwunden.
-Refrain:
-Denn wer die Wahrheit sagt, den sieht man nicht an.
-Wer die Wahrheit sagt, den hört man nicht an.
-Denn die Wahrheit ist grausam und die Lüge ist schön
-und die Belogenen wollen nicht die Wahrheit sehen.
-Denn die Wahrheit zerstört und die Lüge baut auf
-Und wer die Wahrheit erhört, der nimmt die Schmerzen in Kauf.
-Und wenn die Opfer erkennen, dann sind in Gefahr.
-Und wenn sie dem Tode wegrennen, dann ist er schon zu nah.
-Und als er den Blinden die Augen aufriß,
-da tötete sie der Schmerz.
-Denn als sie die Wahrheit fanden,
-zerbarst ihnen das Herz.
-Denn sie hatten den Lügnern vertraut und all ihre Wünsche erhört.
-Und die Wahrheit brannte wie ein Feuer auf ihrer Haut
-und alle Hoffnung war zerstört.
-Und der Glaube an den Sinn des Lebens, der verdorrte
-und steckte die Seele in Brand.
-Er erstarb wie trockene Weinreben in der helfen wollenden Hand.
-Alle Liebe war mit einem Schlage nicht mehr wahr,
-Hass das einzige Empfinden.
-Die Gedanken nicht mehr klar und jeder Funke konnte zünden.
-Und der Erlöser wurde zum Mörder.
-1981
-FANG AN
-
-Du lebst in Ketten, du tust nicht, was du willst.
-Du lebst auf Dauer, nie für den Augenblick.
-Du stehst im Dunkeln und suchst nicht nach dem Licht.
-Ich blick in deine Augen, doch du siehst mich nicht.
-Gehorchst Befehlen, kennst du auch nicht den Sinn.
-Du kannst nicht lachen, du lebst nur für Gewinn.
-Refrain:
-Leb dein Leben, fang endlich an,
-weil man ohne Sinn nicht überleben kann.
-Tu was du willst und hör nur auf dich,
-lass niemanden befehlen über dich.
-Fang an zu fühlen, was du fühlen willst,
-Fang an zu denken, was du denken willst.
-Fang an zu lieben, fang an zu leben,
-Fang an zu sehen, fang an zu geben.
-Fang an zu suchen, fang an zu denken,
-Fang endlich an, dein Leben selbst zu lenken.
-
-Refrain
-1982
+false - 36 - Denn wer die Wahrheit sagt, den sieht man nicht an.
+false - 37 - Wer die Wahrheit sagt, den hört man nicht an.
+false - 38 - Denn die Wahrheit ist grausam und die Lüge ist schön
+false - 39 - und die Belogenen wollen nicht die Wahrheit sehen.
+false - 40 - Denn die Wahrheit zerstört und die Lüge baut auf
+false - 41 - Und wer die Wahrheit erhört, der nimmt die Schmerzen in Kauf.
+false - 42 - Und wenn die Opfer erkennen, dann sind in Gefahr.
+false - 43 - Und wenn sie dem Tode wegrennen, dann ist er schon zu nah.
+false - 44 - Und als er den Blinden die Augen aufriß,
+false - 45 - da tötete sie der Schmerz.
+false - 46 - Denn als sie die Wahrheit fanden,
+false - 47 - zerbarst ihnen das Herz.
+false - 48 - 
+Bridge:
+false - 49 - Denn sie hatten den Lügnern vertraut und all ihre Wünsche erhört.
+false - 50 - Und die Wahrheit brannte wie ein Feuer auf ihrer Haut
+false - 51 - und alle Hoffnung war zerstört.
+false - 52 - Und der Glaube an den Sinn des Lebens, der verdorrte
+false - 53 - und steckte die Seele in Brand.
+false - 54 - Er erstarb wie trockene Weinreben in der helfen wollenden Hand.
+false - 55 - Alle Liebe war mit einem Schlage nicht mehr wahr,
+false - 56 - Hass das einzige Empfinden.
+false - 57 - Die Gedanken nicht mehr klar und jeder Funke konnte zünden.
+false - 58 - Und der Erlöser wurde zum Mörder.
+false - 59 - 1981
