@@ -53,7 +53,17 @@ const readFile = file => {
   /* Append the data to the json file */
   const storeData = (data, path) => {
     try {
-      const neuerText = data.map(ele => ele.text).join("\n");
+      const neuerText = data
+        .map(ele => {
+          if (ele.type === "Title") {
+            ele.text = ele.text + "\n";
+            console.log(ele.text);
+          } else {
+            ele.text = ele.text;
+          }
+          return ele.text;
+        })
+        .join("\n");
       console.log(neuerText);
       fs.writeFile("out.txt", neuerText, function(err) {
         if (err) {
@@ -69,7 +79,7 @@ const readFile = file => {
   };
 
   isUpperCase = ele => {
-    return /\b[A-Z]\b/g.test(ele);
+    return /[A-Z]{2,}/g.test(ele);
   };
 
   isDate = ele => {
