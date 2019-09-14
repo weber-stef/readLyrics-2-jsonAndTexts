@@ -18,7 +18,7 @@ fs.readdir(directory, (err, files) => {
 const readFile = file => {
   fs.readFile(directory + file, "utf8", function(err, data) {
     if (err) throw err;
-    const unfilteredTextArry = data.split("\n").map((singleTextLine, index) => {
+    const unfilteredTextArray = data.split("\n").map((singleTextLine, index) => {
       if (singleTextLine.includes("Refrain")) currentType = "Refrain";
       if (singleTextLine.includes("Bridge")) currentType = "Bridge";
       if (singleTextLine.includes("Author")) currentType = "Author";
@@ -36,20 +36,16 @@ const readFile = file => {
           : currentType
       };
     });
-    // Do not write the following words as text-entries to the json file
-    const filteredTextArray = unfilteredTextArry.filter(line =>
-      line.text === "Bridge:" ||
-      line.text === "Bridge" ||
-      line.text === "Refrain:" ||
-      line.text === "Refrain" ||
-      line.text === "Author:" ||
-      line.text === "Date:"
+    
+    const filteredTextArray = unfilteredTextArray.filter(line =>
+      line.text.includes("Refrain") ||
+      line.text.includes("Bridge")
         ? false
         : true
     );
 
     //define storage-function  (dataToHandOverToJson, PathToJsonFile, dataToHandOverToReformattedTextFile)
-    storeData(filteredTextArray, "./lyrics.json", unfilteredTextArry);
+    storeData(filteredTextArray, "./lyrics.json", unfilteredTextArray);
   });
 
   /* Append the data to the json file */
@@ -57,28 +53,10 @@ const readFile = file => {
     try {
       const neuerText = unfilteredData
         .map((singleTextLine, index) => {
-          if (singleTextLine.text.indexOf("\n") <= 0) {
-            // console.log("no Linebreaks");
-            //if mapping through one of the metioned cases, add linebreak before it
-            if (
-              singleTextLine.text.indexOf("Ref") >= 0 ||
-              singleTextLine.text.indexOf("Bridge") >= 0
-            ) {
-              singleTextLine.text = "\n" + singleTextLine.text;
-              singleTextLine.type = "";
-            }
-            if (isUpperCase()) {
-              console.log("uppercase found");
-              singleTextLine = singleTextLine + "\n";
-            }
-            return (
-              isUpperCase() +
-              " - " +
-              singleTextLine.nr +
-              " - " +
-              singleTextLine.text
+                      return (
+                      singleTextLine.text
             );
-          }
+          
         })
         .join("\n");
       console.log(neuerText);

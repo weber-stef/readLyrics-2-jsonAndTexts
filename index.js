@@ -35,6 +35,7 @@ const readFile = file => {
         };
       })
       // Ignore empty lines and thus destroy layout: .filter(line => line.text.length > 0)
+      .filter(line => line.text.length > 0)
       .filter(line =>
         line.text === "Bridge:" ||
         line.text === "Bridge" ||
@@ -73,8 +74,6 @@ const readFile = file => {
     // check for sth like (08.09)
     return /[0-9]{4}./g.test(ele);
   };
-
-  isAuthor = ele => {};
 
   isNumber = ele => {
     return /^\d+$/.test(ele);
