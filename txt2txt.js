@@ -23,6 +23,7 @@ const readFile = file => {
       if (singleTextLine.includes("Bridge")) currentType = "Bridge";
       if (singleTextLine.includes("Author")) currentType = "Author";
       if (singleTextLine === "") currentType = "";
+      if (singleTextLine === "sw") currentType = "pg";
       return {
         nr: index,
         text: singleTextLine,
