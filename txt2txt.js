@@ -18,29 +18,30 @@ fs.readdir(directory, (err, files) => {
 const readFile = file => {
   fs.readFile(directory + file, "utf8", function(err, data) {
     if (err) throw err;
-    const unfilteredTextArray = data.split("\n").map((singleTextLine, index) => {
-      if (singleTextLine.includes("Refrain")) currentType = "Refrain";
-      if (singleTextLine.includes("Bridge")) currentType = "Bridge";
-      if (singleTextLine.includes("Author")) currentType = "Author";
-      if (singleTextLine === "") currentType = "";
-      if (singleTextLine === "sw") currentType = "pg";
-      return {
-        nr: index,
-        text: singleTextLine,
-        length: singleTextLine.length,
-        type: isUpperCase(singleTextLine)
-          ? "Title"
-          : isDate(singleTextLine)
-          ? "Date"
-          : isYear(singleTextLine)
-          ? "Year"
-          : currentType
-      };
-    });
-    
+    const unfilteredTextArray = data
+      .split("\n")
+      .map((singleTextLine, index) => {
+        if (singleTextLine.includes("Refrain")) currentType = "Refrain";
+        if (singleTextLine.includes("Bridge")) currentType = "Bridge";
+        if (singleTextLine.includes("Author")) currentType = "Author";
+        if (singleTextLine === "") currentType = "";
+        if (singleTextLine === "sw") currentType = "pg";
+        return {
+          nr: index,
+          text: singleTextLine,
+          length: singleTextLine.length,
+          type: isUpperCase(singleTextLine)
+            ? "Title"
+            : isDate(singleTextLine)
+            ? "Date"
+            : isYear(singleTextLine)
+            ? "Year"
+            : currentType
+        };
+      });
+
     const filteredTextArray = unfilteredTextArray.filter(line =>
-      line.text.includes("Refrain") ||
-      line.text.includes("Bridge")
+      line.text.includes("Refrain") || line.text.includes("Bridge")
         ? false
         : true
     );
@@ -54,10 +55,7 @@ const readFile = file => {
     try {
       const neuerText = unfilteredData
         .map((singleTextLine, index) => {
-                      return (
-                      singleTextLine.text
-            );
-          
+          return singleTextLine.text;
         })
         .join("\n");
       console.log(neuerText);
