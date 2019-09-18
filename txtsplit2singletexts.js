@@ -29,7 +29,7 @@ const readFile = file => {
         return {
           nr: index,
           text: singleTextLine,
-          length: singleTextLine.length,
+          lengthOfLine: singleTextLine.length,
           type: isUpperCase(singleTextLine)
             ? "Title"
             : isDate(singleTextLine)

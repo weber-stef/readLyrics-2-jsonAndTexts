@@ -1,7 +1,6 @@
 const fs = require("fs");
 const directory = "./lyrics/";
 let currentType = "";
-const mainTextArray = [];
 
 /* Search for all the file in a given directory */
 fs.readdir(directory, (err, files) => {
@@ -16,15 +15,13 @@ const readFile = file => {
   fs.readFile(directory + file, "utf8", function(err, data) {
     if (err) throw err;
     // Split big text into single texts
-    const unfilteredTexts = data.split(
-      "------------------- next textfile -----------------------"
-    );
+    const unfilteredTexts = data.split("sw\n");
 
     // console.log(Array.isArray(unfilteredTexts));
     unfilteredTexts.map((singleText, index) => {
       // create single textfiles here
       createSingleFile(singleText);
-      store2Json(singleText, index);
+      newFunction(singleText, index);
     });
   });
 };
@@ -36,10 +33,11 @@ const createSingleFile = singleText => {
   //titles array contains titles
   const singleLines = singleText.split("\n");
   const singleTitles = singleLines.filter(singleTextLine =>
-    isUpperCase(singleTextLine)
+    hasLowerCase(singleTextLine)==false
   );
 
   console.log(singleTitles.toString());
+  // console.log(singleText);
 };
 
 const unfilteredTextArray = singleText =>
@@ -48,11 +46,12 @@ const unfilteredTextArray = singleText =>
     if (singleTextLine.includes("Bridge")) currentType = "Bridge";
     if (singleTextLine.includes("Author")) currentType = "Author";
     if (singleTextLine === "") currentType = "";
+    if (singleTextLine === "sw") currentType = "pg";
     return {
       nr: index,
       text: singleTextLine,
-      lengthOfLine: singleTextLine.length,
-      type: isUpperCase(singleTextLine)
+      length: singleTextLine.length,
+      type: hasLowerCase(singleTextLine)
         ? "Title"
         : isDate(singleTextLine)
         ? "Date"
@@ -61,7 +60,6 @@ const unfilteredTextArray = singleText =>
         : currentType
     };
   });
-
 /* Append the data to the json file */
 const storeData = (data, path, index) => {
   try {
@@ -70,16 +68,12 @@ const storeData = (data, path, index) => {
     console.error(err);
   }
 };
-// hasLowerCase = singleTextLine => {
-//   // check for more than 2 Capital Letters in a row > The title
-//   // console.log(/\b[A-Z]{2,}/g.test(singleTextLine));
-//   return /\b[a-z]{2,}/g.test(singleTextLine);
-// };
-isUpperCase = singleTextLine => {
+hasLowerCase = singleTextLine => {
   // check for more than 2 Capital Letters in a row > The title
   // console.log(/\b[A-Z]{2,}/g.test(singleTextLine));
-  return /\b[A-Z]{2,}/g.test(singleTextLine);
+  return /\b[a-z]{2,}/g.test(singleTextLine);
 };
+
 isDate = singleTextLine => {
   // check for sth like (08.09)
   return /\([0-9]{1,}\.[0-9]{1,}.{0,}\)/g.test(singleTextLine);
@@ -87,7 +81,7 @@ isDate = singleTextLine => {
 
 isYear = singleTextLine => {
   // check for sth like (08.09)
-  return /^\d{4}\b/g.test(singleTextLine);
+  return /[0-9]{4}./g.test(singleTextLine);
 };
 
 isAuthor = singleTextLine => {};
@@ -95,10 +89,6 @@ isAuthor = singleTextLine => {};
 isNumber = singleTextLine => {
   return /^\d+$/.test(singleTextLine);
 };
-function store2Json(singleText, index) {
-  storeData(
-    unfilteredTextArray(singleText),
-    "./text-material/lyrics.json",
-    index
-  );
+function newFunction(singleText, index) {
+  storeData(unfilteredTextArray(singleText), "./lyrics.json", index);
 }
