@@ -1,5 +1,5 @@
 const fs = require("fs");
-const directory = "./lyrics/";
+const directory = "./lyricCollection/";
 let currentType = "";
 // function to becalled in map
 function whatever(clme) {
@@ -24,8 +24,9 @@ const readFile = file => {
         if (singleTextLine.includes("Refrain")) currentType = "Refrain";
         if (singleTextLine.includes("Bridge")) currentType = "Bridge";
         if (singleTextLine.includes("Author")) currentType = "Author";
+        if (singleTextLine.includes("-nt-")) breakTextHere();
         if (singleTextLine === "") currentType = "";
-        if (singleTextLine === "sw") currentType = "pg";
+
         return {
           nr: index,
           text: singleTextLine,
@@ -93,4 +94,7 @@ const readFile = file => {
   isNumber = singleTextLine => {
     return /^\d+$/.test(singleTextLine);
   };
+  breakTextHere(){
+    console.log('break me');
+  }
 };

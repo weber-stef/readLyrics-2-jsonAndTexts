@@ -1,5 +1,5 @@
 const fs = require("fs");
-const directory = "./lyrics/";
+const directory = "./lyricCollection/";
 let currentType = "";
 // function to becalled in map
 function whatever(clme) {

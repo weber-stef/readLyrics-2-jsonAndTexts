@@ -1,4 +1,3 @@
-sw
 BLAU BLÜHT DER ENZIAN
 
 Ja, ja, so blau, blau, blau blüht der Enzian,
@@ -39,7 +38,7 @@ die ich nie vergessen kann.
 Artist: Heino
 1973
 
-sw
+------------------- next textfile -----------------------
 EIN TIROLER WOLLTE JAGEN
 
 Ein Tiroler wollte jagen
@@ -72,58 +71,65 @@ Holderija-rija-rija-ho
 Artist: Heino
 1974
 
+------------------- next textfile -----------------------
 CARAMBA, KARACHO, EIN WHISKEY
 
-karamba, karacho, ein whisky
-karamba, karacho, ein gin
-verflucht, sacramento, dolores
-und alles ist wieder hin
+Karamba, Karacho, ein Whisky!
+Karamba, Karacho, ein Gin!
+Verflucht, Sakramento, Dolores,
+Und alles ist wieder hin!
+(Hey, hey!)
 
-karamba, karacho, ein whisky
-karamba, karacho, ein gin
-verflucht, sacramento, dolores
-und alles ist wieder hin
+Refrain:
+Karamba, Karacho, ein Whisky!
+Karamba, Karacho, ein Gin!
+Verflucht, Sakramento, Dolores,
+Und alles ist wieder hin!
 
-in rio de janeiro
-in einer klitzekleinen hafenbar
-saá ein braungebrannter gaucho
-mit schwarz-braunem haar
+In Rio de Janeiro
+In einer klitzekleinen Hafenbar
+Saß ein braungebrannter Gaucho
+Mit schwarzbraunem Haar.
+Und um Dolores zu vergessen,
+Die seine Liebste war gewesen,
+Sprach er zu Don Filippo,
+Dem alten Spelunkenwirt:
 
-und nun dolores zu vergessen
-die seine liebste war gewesen
-sprach er zu don filippo,
-dem alten spelunkenwirt
+Refrain:
+Karamba, Karacho, ein Whisky!
+Karamba, Karacho, ein Gin!
+Verflucht, Sakramento, Dolores,
+Und alles ist wieder hin!
+(Hey, hey!)
+Karamba, Karacho, ein Whisky!
+Karamba, Karacho, ein Gin!
 
-karamba, karacho, ein whisky
-karamba, karacho, ein gin
-
-verflucht, sacramento, dolores
-und alles ist wieder hin
-
-karamba, karacho, ein whisky
-karamba, karacho, ein gin
-verflucht, sacramento, dolores
-und alles ist wieder hin
-
-in rio de janeiro
-in einer klitzekleinen hafenbar
-sass ein braungebrannter gaucho
-mit schwarz-braunem haar
-
-und er sprach "amigo mio"
-sie war die schoenste frau in rio
-da lachte don filippo
-der alte spelunkenwirt
-
-karamba, karacho, ein whisky
-karamba, karacho, ein gin
-verflucht, sacramento, dolores
-und alles ist wieder hin
+Verflucht, Sakramento, Dolores,
+Und alles ist wieder hin!
+In Rio de Janeiro
+In einer klitzekleinen Hafenbar
+Saß ein braungebrannter Gaucho
+Mit schwarzbraunem Haar.
+Und er sprach: Amigo mio,
+Sie war die schönste Frau in Rio!
+Da lachte Don Filippo,
+Der alte Spelunkenwirt:
+Karamba, Karacho, ein Whisky!
+Karamba, Karacho, ein Gin!
+Verflucht, Sakramento, Dolores,
+Und alles ist wieder hin!
+(Hey, hey!)
+Karamba, Karacho, ein Whisky!
+Karamba, Karacho, ein Gin!
+Verflucht, Sakramento, Dolores,
+Und alles ist wieder hin,
+Und alles ist wieder hin!
+Olé!
 
 Artist: Heino
 1972
 
-sw
+------------------- next textfile -----------------------
 DIE INTERIMSLIEBENDEN
 
 Während nur eines Zungenschlags
@@ -210,7 +216,7 @@ und morgen noch nicht
 Artist: Blixa Bargeld
 1993
 
-sw
+------------------- next textfile -----------------------
 STELLA MARIS
 
 Ich träum' ich treff' dich ganz tief unten
@@ -286,7 +292,7 @@ Wir träumen uns beide wach
 Author: Blixa Bargeld
 1996
 
-sw
+------------------- next textfile -----------------------
 YÜ-GUNG
 
 Refrain:
@@ -355,8 +361,8 @@ Staubiges Vergnügen
 Author: Blixa Bargeld
 1985
 
-sw
-JENSEITS VON EDEN SONGTEXT
+------------------- next textfile -----------------------
+JENSEITS VON EDEN
 
 Heiß, heiß, kochend heiß,
 heiß, heiß, hundert Grad,
@@ -409,7 +415,7 @@ Wer ist hinterm Spiegel?
 Author: Rio Reiser
 1981
 
-sw
+------------------- next textfile -----------------------
 KEINE MACHT FÜR NIEMAND
 
 Ich bin nicht frei und kann nur wählen
@@ -466,7 +472,7 @@ Keine Macht für Niemand!
 Author: Rio Reiser
 1972
 
-sw
+------------------- next textfile -----------------------
 DER JUNGE AM FLUSS
 
 Der Junge am Fluß, er liegt im Sand, blickt in den Himmel,
@@ -489,7 +495,7 @@ Der Junge am Fluß.
 Author: Volker Griepenstroh, Rio Reiser
 1995
 
-sw
+------------------- next textfile -----------------------
 ALLES LÜGE
 
 
@@ -521,3 +527,92 @@ Oder ist das, oder ist das, oder ist das
 
 Author: Rio Reiser
 1986
+
+------------------- next textfile -----------------------
+EISZEIT
+
+Das Telefon seit Jahren still -
+kein Mensch mit dem ich reden will
+ich seh im Spiegel mein Gesicht -
+nichts hat mehr Gewicht.
+
+Ich werfe Schatten an die Wand
+und halte zärtlich meine Hand
+ich red mit mir und schau ins Licht -
+mich erreichst du nicht.
+
+In meinem Film bin ich der Star
+ich komm auch nur alleine klar.
+Panzerschrank aus Diamant -
+Kombination unbekannt.
+
+Refrain:
+Eiszeit - mit mir beginnt die Eiszeit
+im Labyrinth der Eiszeit - minus neunzig Grad.
+Eiszeit - mit mir beginnt die Eiszeit
+
+
+Alle Worte tausenmal gesagt
+alle Fragen tausendmal gefragt
+alle Gefühle tausendmal gefühlt -
+tiefgefroren - tiefgekühlt.
+
+In meinem Film bin ich der Star
+ich komm auch nur alleine klar.
+Panzerschrank aus Diamant -
+Kombination unbekannt.
+
+Eiszeit - mit mir beginnt die Eiszeit
+im Labyrinth der Eiszeit - minus neunzig Grad.
+Eiszeit - mit mir beginnt die Eiszeit
+
+Author: Annette Humpe
+1982
+
+------------------- next textfile -----------------------
+SCHWEIN
+
+Du denkst ich bin der softe Typ
+Und der die Frauen gut versteht
+Der heimlich Gedichte schreibt
+Und zur Selbsterfahrung geht
+So sensibel, so charmant
+Grade richtig zum verlieben
+Du hast mich noch nicht erkannt
+Mein wahres Ich ist sehr durchtrieben
+
+Refrain:
+Ich habe unbändige Lust
+Fies und gemein zu sein
+Es macht mir einen Höllenspaß
+So wie ein Schwein zu sein
+Ich lüg dich an mit einem Lachen
+Das fällt dir gar nicht auf
+Ich noch ganz andere Sachen machen
+Da kommst du gar nicht drauf
+
+Ich spiele schüchtern und bescheiden
+Sensibel auf den ersten Blick
+Alle mögen mich gut leiden
+Alle fliegen sie auf den Trick
+Ich rede was du gerne hörst
+Und du fällst gern drauf rein
+Dann wart ich bis du auf mich schwörst
+Dann lass ich dich allein
+
+Refrain
+
+Da kommst du gar nicht drauf
+Da kommst du gar nicht drauf
+Da kommst du gar nicht drauf
+Da kommst du gar nicht drauf
+
+Author: F.J. Krüger
+1981
+
+
+
+
+
+
+

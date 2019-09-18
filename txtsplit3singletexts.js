@@ -1,5 +1,5 @@
 const fs = require("fs");
-const directory = "./lyrics/";
+const directory = "./lyricCollection/";
 let currentType = "";
 const mainTextArray = [];
 

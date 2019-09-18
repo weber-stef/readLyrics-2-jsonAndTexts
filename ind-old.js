@@ -1,5 +1,5 @@
 const fs = require("fs");
-const directory = "./lyrics/";
+const directory = "./lyricCollection/";
 let currentType = "";
 /* Search for all the file in a given directory */
 fs.readdir(directory, (err, files) => {
