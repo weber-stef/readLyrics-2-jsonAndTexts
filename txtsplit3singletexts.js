@@ -96,6 +96,7 @@ isNumber = singleTextLine => {
   return /^\d+$/.test(singleTextLine);
 };
 function store2Json(singleText, index) {
+  console.log(typeof singleText);
   storeData(
     unfilteredTextArray(singleText),
     "./text-material/lyrics.json",

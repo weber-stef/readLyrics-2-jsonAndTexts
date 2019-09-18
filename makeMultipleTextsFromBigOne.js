@@ -2,7 +2,6 @@ const fs = require("fs");
 const directory = "./lyricCollection/";
 let currentType = "";
 const textCollection = [];
-let numberOfTexts = 0;
 
 /* Search for all the file in a given directory */
 fs.readdir(directory, (err, files) => {
@@ -18,28 +17,29 @@ const readFile = file => {
     if (err) throw err;
     const allMyTexts = data;
     const unfilteredTexts = data.split("\n");
-    // console.log(unfilteredTexts);
-    // check for "-nt-"-Entries
+
+    // check for "-nt-"-Entries to have them as markers push the seperated texts to the textCollection array
     unfilteredTexts.map((lineInAllTexts, index) => {
-      // console.log(typeof lineInAllTexts);
       if (lineInAllTexts.includes("-nt-")) {
         const seperatedTexts = allMyTexts.split("-nt-");
-        newFunction(seperatedTexts);
+        pushSeperatedTextsToCollection(seperatedTexts);
+        console.log(textCollection.seperatedTexts);
       }
     });
     //
   });
 };
 
-function newFunction(seperatedTexts) {
+function pushSeperatedTextsToCollection(seperatedTexts) {
+  //const unfilteredTextArray = singleText =>
+  seperatedTexts.map((singleTextLine, index) => {
+    // console.log(singleTextLine);
+    return singleTextLine;
+  });
   textCollection.push(seperatedTexts);
-  // console.log(seperatedTexts);
+
   // console.log(typeof seperatedTexts);
-  console.log(textCollection);
+  // console.log(textCollection);
+  // console.log(typeof seperatedTexts);
+  // console.log(textCollection);
 }
-//ok for "-nt-" in text data, if present increment variable "numberOftexts"
-// if (data.indexOf("-nt-") >= 0) {
-//   numberOfTexts++;
-// }
-// console.log(numberOfTexts);
-// });
