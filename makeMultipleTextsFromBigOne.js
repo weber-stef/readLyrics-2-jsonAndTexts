@@ -23,7 +23,7 @@ const readFile = file => {
       if (lineInAllTexts.includes("-nt-")) {
         const seperatedTexts = allMyTexts.split("-nt-");
         pushSeperatedTextsToCollection(seperatedTexts);
-        console.log(textCollection.seperatedTexts);
+console.log(textCollection.length);
       }
     });
     //
@@ -31,15 +31,15 @@ const readFile = file => {
 };
 
 function pushSeperatedTextsToCollection(seperatedTexts) {
-  //const unfilteredTextArray = singleText =>
   seperatedTexts.map((singleTextLine, index) => {
     // console.log(singleTextLine);
     return singleTextLine;
   });
   textCollection.push(seperatedTexts);
+// console.log(seperatedTexts);
 
-  // console.log(typeof seperatedTexts);
-  // console.log(textCollection);
+
+
   // console.log(typeof seperatedTexts);
   // console.log(textCollection);
 }
